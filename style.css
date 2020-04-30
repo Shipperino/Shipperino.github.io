@@ -2,8 +2,7 @@
 body
 {
 	text-align: justify;
-	width: 48%;
-	margin:auto;	
+	margin: 8% 25% 4% 25%;
 	border: 1px grey solid;
 	box-shadow: 4px 4px 6px rgb(26, 30, 56);
 	font-family: calibri;
@@ -13,17 +12,17 @@ body
 /*BLOC DROIT*/
 main
 {
-	overflow: hidden;
-	padding-right: 35px;
+	overflow: hidden;	
 	background-color: aliceblue;
-	width: 100%;
+	width: 70%;
 }
+
 header
 {
 	margin-left: 50px;
 	margin-bottom: 45px;
-
 }
+
 #nomprenom
 {
 	display: inline-block;
@@ -38,10 +37,12 @@ header
  	color: #006080 ;
  	font-weight: bold;
  }
+
  .nom
  {
  	font-weight: 400
  }
+
  .devweb
  {
  	font-size: 1.5em;
@@ -103,13 +104,9 @@ body,ul
 {
 	list-style-type: circle;
 }
-.date,.date1 p
+.date p,.date1 p
 {
 	width: 60px;
-}
-h4 p
-{
-	width: 450px;
 }
 
 .txt
@@ -118,6 +115,7 @@ h4 p
 	overflow: hidden;
 	flex-direction: column;
 	width: 450px;
+	padding-right: 35px;
 }
 
 #flexrecom
@@ -188,10 +186,22 @@ aside h2
 
 .linkedin
 {
-	/* box-shadow: 5px 5px 5px 0px #BDBDBD; */
 	display: inline-flex;
+	text-align: center;
 }
 
+/* .linkedinbutton
+
+{
+	background-color: rgb(46, 63, 87); 
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;	  
+} */
 .apropos
 {
 	margin-top: 00px
@@ -230,8 +240,22 @@ aside p
 	text-align: left;
 	margin-left: 10%;
 }
-
-@media all and (max-width: 1024px)
+@media all and (max-width: 375px)
+{
+	#minipp
+	{
+		display: none;
+	}
+	.contact
+	{
+		width: 100%;
+	}
+	.responsive
+	{
+		width: 100%;
+	}
+}
+@media all and (max-width: 768px)
  {
 	html
 	{
@@ -239,7 +263,7 @@ aside p
 	}
 	body
 	{
-		flex-direction: column;
+		flex-direction: column-reverse;
 		width: auto;
 		margin: auto;	
 	}
@@ -249,11 +273,28 @@ aside p
 			overflow: hidden;
 			width: 100%;
 	}
+	main
+	{
+		width: 100%;
+	}
+	header
+	{
+		margin-left: 0%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	.devweb
+	{
+		text-align: center;
+	}
 
 	aside h4 {
 		display: flex;
 		flex-direction: column;
 		margin: auto;
+		border: 1px black dotted;
 	}
 	aside p
 	{
@@ -268,32 +309,38 @@ aside p
 		padding-right: 3%;
 		width: auto;
 		overflow: hidden;
+		
 	}
 
-	aside h1 {
+	aside h1
+	{
 		width: 70%;
-		margin-left: auto;
+		margin: auto;
 	}
 
-	#nomprenom {
-		text-align: center;
+	#nomprenom
+	{
 		margin-left: 0px;
 		margin: auto;
+		justify-content: center;
 	}
 
 	.contact {
 		margin: auto;
 		width: 100%;
 		display: flex;
-		justify-content: flex-end;
 		overflow: hidden;
+		display: flex;
+		text-align: center;
+		justify-content: space-around;
+		padding-right: 10%;
 		
 	}
 	.flex1
 	{
 		display: flex;
 		flex-direction: column;
-		width: 80%;
+		width: 100%;
 		
 	}
 	
@@ -311,27 +358,5 @@ aside p
 		height: auto;
 		margin: 10px;
 		width: 100px;
-	}
-}
-
-@media all and (max-width: 604px)
-
-{
-	figure
-	{
-		display: none;
-	}
-	.flex1
-	{
-		width: 100%;
-	}
-	.contact div
-	{
-		overflow: hidden;
-	}
-	div h4
-	{
-		overflow: hidden;
-		margin: auto;
 	}
 }
