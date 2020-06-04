@@ -142,21 +142,19 @@ $blackdot: 3rem;
 
 $anim-dur: 1000ms;
 
-.prochainement
-{ 
-    outline: none;
-    
+
 .prochainements
 { 
     display: flex;
     justify-content: space-evenly;
-    margin: 0 ;
+    margin: auto ;
     padding-top: 6px; 
-    width: 100%;     
+    text-align: center;
+    width: 10%;  
                 &__dot
                 {
                 display: flex;
-                justify-content: space-evenly;
+                width: auto;
                 border-radius:50%;
                 animation: bars $anim-dur backwards infinite;
                 animation-direction: normal;
@@ -185,7 +183,7 @@ $anim-dur: 1000ms;
                 
             }
         
-    }
+    
 
 
 @keyframes bars {
