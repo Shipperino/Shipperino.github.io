@@ -11,8 +11,7 @@ $anim-dur: 1000ms;
 $anim-delay: $anim-dur / 5;
 
 .menu
-    {
-         
+    {         
          display: flex;
          flex-wrap: wrap;
          text-align: center;
@@ -28,8 +27,7 @@ $anim-delay: $anim-dur / 5;
                 height: 350px; 
                 margin: 1.5%;
                 box-shadow: $border-shadow; 
-                transition: 350ms;
-           
+                transition: 350ms;           
                           
             &--red
             {
@@ -37,28 +35,31 @@ $anim-delay: $anim-dur / 5;
                 font-family:'Dancing Script';
               
                     &:hover{
-                        background-color: darken($clr-menu1, $amount);                     
+                        .reverse
+                        {
+                            opacity: 0.5;
+                        }                   
                 }          
                 .reverse
                 {
-                    color: #4d1111;
-                }
-                
-              
+                    color: #4d1111;                   
+                }      
             }     
             &--pink
             {
                     background-color: $clr-menu2 ; 
                     font-family: 'Montserrat Alternates', sans-serif;
                     &:hover {                      
-                        background-color: darken($clr-menu2, $amount);
+                        .reverse
+                        {
+                            opacity: 0.3;
+                        }   
                     }
                     .reverse{
-                        background: linear-gradient(to right, #CE8800 0%, #6B0AC5 100%);
+                    background: linear-gradient(to right, #CE8800 0%, #6B0AC5 100%);
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: text;
                     }
-               
             }    
             &--grey
             {       
@@ -66,7 +67,10 @@ $anim-delay: $anim-dur / 5;
                     font-family: 'Satisfy', cursive;
                     
                     &:hover {
-                        background-color: darken($clr-menu3, $amount);
+                        .reverse
+                        {
+                            opacity: 0.3;
+                        }   
                     }
                     .reverse{
                         background: -moz-linear-gradient(45deg, rgb(0, 35, 80) 0%, rgb(0, 225, 255) 100%);
@@ -81,7 +85,11 @@ $anim-delay: $anim-dur / 5;
                     background-color: $clr-menu4;
                     
                     &:hover {                      
-                        background-color: darken($clr-menu4, $amount);
+                        
+                        .reverse
+                        {
+                            opacity: 0.3;
+                        }   
                     }
                     .reverse
                     {
@@ -94,9 +102,7 @@ $anim-delay: $anim-dur / 5;
                     }
             }
         }
-    }
-
-         
+    }       
     
 .reverse
 {
@@ -107,35 +113,27 @@ $anim-delay: $anim-dur / 5;
     width: 100%;
     text-decoration: none;
     transition: 250ms;
+    
 
             &:hover{ 
             transition: ease-in-out 250ms ;
             transform: scale(1.4);   
                     
         }
+    i
+    {
+        width: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
        
 }
 $blackdot: 3rem;
 
-.prochainement {
-    justify-content: center;
-    font-family: $head-font;
-    font-size: 1.7rem;
-    text-decoration: none;
-    text-align: center;
-    width: 12.5rem;
-    height: 40px ;
-    margin:auto ;
-    background-color: $bgcolor;
-    color: $h1color;
-    border-radius: 10px;
-    cursor: pointer;
-    }
-
 @mixin dot {
     height: 15px;
-    background: rgba(189, 170, 170, 0.952);
+    background: $h1color;
     border-radius:50%;
     width: 15px;
     }
@@ -143,24 +141,28 @@ $blackdot: 3rem;
 $anim-dur: 1000ms;
 
 
-.prochainements
+.prochainement
 { 
     display: flex;
     justify-content: space-evenly;
     margin: auto ;
-    padding-top: 6px; 
-    text-align: center;
-    width: 10%;  
+    padding: 6px 0 6px 0; 
+    font-family: $head-font;
+    font-size: 1.7rem;
+    text-decoration: none;
+    background-color: $bgcolor;
+    color: $h1color;
+    border-radius: 10px; 
+    width: 35%;
+    align-items: center;
                 &__dot
                 {
                 display: flex;
                 width: auto;
                 border-radius:50%;
                 animation: bars $anim-dur backwards infinite;
-                animation-direction: normal;
-                
-            
-                 }
+                animation-direction: normal;             
+                }
 
                 &__dot--b1
                 {

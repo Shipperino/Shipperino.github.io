@@ -15,12 +15,11 @@ $border-shadow: 0px 0px 5px -1px rgba(0,0,0,0.68);
     }
 }
 .fas
-{
+{   
     font-size: 2em;
-    color: red;
-    background: linear-gradient(to right, rgb(241, 166, 96) 0%, rgb(235, 221, 95) 100%);
+    background: linear-gradient(to right, rgb(190, 70, 0) 0%, rgb(235, 221, 95) 100%);
     -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+    -webkit-background-clip: text;   
 }
 
 .mainmenu
@@ -84,54 +83,50 @@ $border-shadow: 0px 0px 5px -1px rgba(0,0,0,0.68);
     {
         font-family: 'Satisfy', cursive;
     }
-    .aligncenter
-    {
-        text-align: center;
-    }
-    
 }
-
 
 .priceflex
 {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
 
 section{
+    h2{
+        font-size: 1.3em;
+    }
     h3{
         padding: 0 10px 0 10px;
-        font-size: 1.4em;
-        
+        font-size: 1.5em;      
     }
-
+    .pmenu
+    {
+        margin-right: 10%;
+    }
     p{
         text-align: left;
-        font-size: 1.4em;
-        
+        font-size: 1.2em;       
     }
 }
 .traitmenu
         {
             display: flex;
-            width: 100%;
-        
-    
-            
+            width: 100%;           
         &__left
         {
             border-bottom: 3px solid;
-            width: 35%;;
+            width: 50%;;
             margin: auto;
             margin-left: 0%;
+            margin-right: 4%;
         }
         &__right
         {
             border-bottom: 3px solid;
-            width: 35%;;
+            width: 50%;;
             margin: auto;
             margin-right: 0;
+            margin-left: 4%;
         }
         &__blue1
         {
@@ -153,57 +148,30 @@ section{
         {
             border-image-source: linear-gradient(to left, rgb(0,143,104), rgb(153, 252, 150));
             border-image-slice: 1;
-
         }
         }
     }
-
-
-
-// .progress{
-//     display: inline-block;
-//         &__bar {
-//         height: 2px;
-//         position: relative;       
-//         }
-//         &__bar::after {
-//             content: '';
-//             margin: auto;
-//             flex-direction: column;
-//             height: 2px;
-//             transform-origin: left;
-//             width: 100%;
-//             background: transparent;
-//             transition: width .5s ease ;
-//             position: absolute;
-           
-//         }
-//         &__bar:hover::after {
-//             width: 90%;
-//             background: rgb(255, 4, 4)241, 0, 0;
-//         }
-// }
 
 .mainmenu{
-
-h3 {
-    position: relative;
-    text-decoration: none;
-    padding-bottom: 5px;
-   
-&::after {
-        content: '';
-        position: absolute;     
-		left: 0%;
-		bottom: 0;
-		width: 0;
-		height: 2px;
-        transition: all ease-in-out 400ms;
-    }
-
-        &:hover::after {
-            width: 100%;
-            background: #444;                 
+    h3 {
+        position: relative;
+        text-decoration: none;
+        padding-bottom: 5px;
+        white-space: nowrap;
+    
+    &::after {
+            content: '';
+            position: absolute;     
+            left: 0%;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            transition: all ease-in-out 400ms;
         }
-    }
+
+            &:hover::after {
+                width: 100%;
+                background: #444;                 
+            }
+        }
 }
