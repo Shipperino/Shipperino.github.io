@@ -16,16 +16,16 @@ $anim-delay: $anim-dur / 5;
          flex-wrap: wrap;
          text-align: center;
          justify-content: center;       
-         width: 73%;
+         width: 50%;
          margin: auto;
          
         &__accueil
             {
                 text-decoration: none;
                 overflow: hidden;   
-                width: 33.5%;
+                width: 17.5vw;
                 height: 350px; 
-                margin: 1.5%;
+                margin: 3%;
                 box-shadow: $border-shadow; 
                 transition: 350ms;           
                           
@@ -153,7 +153,7 @@ $anim-dur: 1000ms;
     background-color: $bgcolor;
     color: $h1color;
     border-radius: 10px; 
-    width: 35%;
+    width: 17%;
     align-items: center;
                 &__dot
                 {
